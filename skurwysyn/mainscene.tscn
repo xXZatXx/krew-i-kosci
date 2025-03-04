@@ -5,7 +5,8 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(75, 79)
+position = Vector2(84, 33)
+scale = Vector2(0.367188, 1.66406)
 texture = ExtResource("1_caqd3")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
