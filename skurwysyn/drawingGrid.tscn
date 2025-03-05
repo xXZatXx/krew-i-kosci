@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://qj75c8bh0bgh"]
+
+[ext_resource type="Script" uid="uid://bpb0wls7k2iqn" path="res://skurwysyn/drawing.gd" id="1_e4q0j"]
+
+[node name="DrawingGrid" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Main" type="MarginContainer" parent="." node_paths=PackedStringArray("pixelTemplate", "pixelContainer")]
+layout_mode = 0
+offset_right = 632.0
+offset_bottom = 632.0
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+script = ExtResource("1_e4q0j")
+pixelTemplate = NodePath("GridContainer/pixel")
+pixelContainer = NodePath("GridContainer")
+
+[node name="GridContainer" type="GridContainer" parent="Main"]
+layout_mode = 2
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+
+[node name="pixel" type="ColorRect" parent="Main/GridContainer"]
+custom_minimum_size = Vector2(8, 8)
+layout_mode = 2

@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="krew-i-kosci"
+run/main_scene="uid://qj75c8bh0bgh"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
